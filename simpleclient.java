@@ -7,7 +7,7 @@ public class simpleclient{
 	public static void main(String[] args) {
 		
 		try{
-			String hostName = (args[0]);
+			String hostName = (args[0]); //sets host name to inputted address
 			InetAddress echoServerIP = InetAddress.getByName(hostName);
 			Socket clientSocket = new Socket(echoServerIP, Integer.parseInt(args[1]));
 			
